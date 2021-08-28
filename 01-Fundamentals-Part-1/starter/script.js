@@ -242,3 +242,52 @@
 
 
 // Type conversion and coercion
+// Strange for JS
+
+
+// Type Conversion
+const inputYear = '1991'
+console.log(Number(inputYear), inputYear) 
+console.log( Number(inputYear) + 18); 
+
+// Returns NaN, or Not a Valid Number
+// NaN is a Number, but it's not a valid number, so that's bizarre
+console.log(Number("Jonas"));
+
+console.log(String(23), 23);
+
+// Cannot convert to Undefined or null
+// Booleans are weird here
+// Types are converted automatically in some cases, keep an eye out for these
+
+
+// Type Coercion
+
+// exactly the same
+console.log("I am " + 23 + " years old");
+console.log("I am " + "23" + " years old");
+
+// This is a bit odd
+console.log('23' - '10' - 3);
+// The plus + is concatinaiton if there's a string involved, thus Numbers are converted to strings
+// The minus - is subtraction, and thus all values are converted to Numbers.
+// Very strange
+// The ONLY operator that doesn't convert to Numbers is the plus + operator
+console.log('23' * '2');
+console.log('24' / '2');
+console.log('23' > '18');
+
+// Example
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+
+// 95, it goes in order fom left to right
+n = 2+3+4+'5';
+console.log(n);
+
+n = '10' - '4' - '3' - 2 + '5'
+console.log(n);
+
+// It could be considered poor practice to use type coercion, but this guy thinks it's useful, so whatever.
+
