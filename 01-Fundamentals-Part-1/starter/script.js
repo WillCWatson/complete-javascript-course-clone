@@ -196,9 +196,24 @@
 
 
 // decisions/ if/else
-const age = 19;
+const age = 15;
 const isOldEnough = age >= 18;
 
+// Called an if/else Control Structure
 if(isOldEnough){
     console.log("Sarah can start driving!");
+} else {
+    const yearsLeft = 18 - age
+    console.log(`Sarah cannot start driving, wait another ${yearsLeft} years`);
 }
+// I'm suspecting this guy's wife is named Sarah or something
+
+let century ;
+const birthYear = 1991;
+if(birthYear <= 2000){
+    century = 20;
+}else{
+    century = 21;
+}
+console.log(century)
+
