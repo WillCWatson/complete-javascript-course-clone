@@ -1,3 +1,6 @@
+**Everything below is from the original repo from which this was cloned, and is in the context of the course I am taking.**
+
+
 # Course Material and FAQ for my Complete JavaScript Course
 
 This repo contains starter files and final code for all sections and projects contained in the course.
